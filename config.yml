@@ -21,8 +21,8 @@
 
   - name: install updates Ubuntu
     apt:
-     # update_cache: yes
-   # changed_when: false
+      update_cache: yes
+    changed_when: false
     when: ansible_distribution == "Ubuntu"
 
 - hosts: elk_centos
